@@ -51,12 +51,9 @@ Parameter: url_key  `The url shortened without domain`
  
 
 ```
-curl -X GET http://YOUR_URL_HERE/analyze \
+curl -X GET http://YOUR_URL_HERE/analyze/{url_key} \
   -H 'Content-Type: application/json' \
-  -H 'cache-control: no-cache' \
-  -d '{
-	"url_key": "025d7dd"
-    }'
+  -H 'cache-control: no-cache' 
 ```
 The return is a json with one field; [total_views] 
 
